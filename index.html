@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifetime Supply Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">LIFE<span>CALC.</span></div>
+        <p class="tagline">PLAN YOUR FUTURE. CALCULATE YOUR LIFE.</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">YOUR LIFE, YOUR NUMBERS</p>
+            <h1>Calculate your <span>lifetime supply.</span></h1>
+            <p class="description">
+                Discover how much you will need for the rest of your life
+                and plan your next adventure.
+            </p>
+        </section>
+
+        <section class="calculators">
+
+            <!-- EJERCICIO 1 -->
+            <div class="calculator-card">
+                <div class="card-icon">🍿</div>
+                <p class="card-number">01 / LIFETIME SNACKS</p>
+                <h2>Snack calculator</h2>
+                <p class="card-description">
+                    How many snacks will you eat during your lifetime?
+                </p>
+
+                <div class="form-group">
+                    <label>Current age</label>
+                    <input type="number" id="edad" value="18" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Estimated maximum age</label>
+                    <input type="number" id="edadMaxima" value="85" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label>Favorite snack</label>
+                    <input type="text" id="snack" value="French fries">
+                </div>
+
+                <div class="form-group">
+                    <label>Snacks per day</label>
+                    <input type="number" id="snacksDia" value="2" min="0" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label>Price per snack ($)</label>
+                    <input type="number" id="precio" value="1500" min="0">
+                </div>
+
+                <button onclick="calcularSnacks()">Calculate my lifetime supply ↗</button>
+
+                <div class="result" id="resultadoSnacks">
+                    <p>Your results will appear here.</p>
+                </div>
+            </div>
+
+            <!-- EJERCICIO 2 -->
+            <div class="calculator-card">
+                <div class="card-icon">✈️</div>
+                <p class="card-number">02 / TRAVEL BUDGET</p>
+                <h2>Travel calculator</h2>
+                <p class="card-description">
+                    Plan your budget and discover how much you can spend per meal.
+                </p>
+
+                <div class="form-group">
+                    <label>Number of travel days</label>
+                    <input type="number" id="dias" value="15" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label>Total travel budget ($)</label>
+                    <input type="number" id="presupuesto" value="1500000" min="0">
+                </div>
+
+                <div class="form-group">
+                    <label>Meals per day</label>
+                    <input type="number" id="comidasDia" value="3" min="1">
+                </div>
+
+                <button onclick="calcularViaje()">Calculate my travel budget ↗</button>
+
+                <div class="result" id="resultadoViaje">
+                    <p>Your results will appear here.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>LIFE<span>CALC.</span> — MAKE EVERY NUMBER COUNT.</p>
+        <p>© 2026 Lifetime Supply Calculator</p>
+    </footer>
+
+</body>
+</html>
